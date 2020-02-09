@@ -1,0 +1,35 @@
+/* Colors */
+/* Basic setting */
+html {
+  font-size: 10px;
+}
+section {
+  padding: 10rem 0;
+}
+.btn1 {
+  background-color: #fdb303;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  border-radius: 7px;
+  border: none;
+}
+/* Section main */
+main {
+  margin: 2rem 0;
+}
+.tell {
+  display: inline-block;
+  color: #1a1820;
+  font-weight: 700;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 50%;
+  margin: -1.8rem 0;
+}
+.btn-head {
+  position: absolute;
+  top: 50%;
+  margin: -2.2rem 0;
+}
