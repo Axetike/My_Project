@@ -36,6 +36,20 @@ section {
   border-radius: 7px;
   border: none;
 }
+.btn1:hover {
+  cursor: position;
+  background-color: #db9a02;
+  color: #ededed;
+  transform: scale(1.02);
+}
+button:focus,
+input:focus,
+a:focus {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
 /* Section main */
 main {
   padding: 2rem 0;

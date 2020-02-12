@@ -60,9 +60,22 @@ section {
 	padding: 1rem 3rem;
 	border-radius: 7px;
 	border: none;
+	&:hover {
+		cursor: position;
+		background-color: darken(@btn-color, 7%);
+		color: darken(@light, 7%);
+		transform: scale(1.02);
+	}
 }
 
-
+button, input, a {
+	&:focus {
+		outline: none;
+	}
+}
+a:hover {
+	text-decoration: none;
+}
  
 /* Section main */
  main {
@@ -183,6 +196,9 @@ section {
 		}
 	}
 }
+
+
+
 
 /*Экран md */
 @media (max-width: 991px) {
