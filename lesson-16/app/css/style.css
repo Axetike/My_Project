@@ -1,0 +1,12 @@
+.slid {
+	position: absolute;
+	width: 600px;
+	left: 50%;
+	top: 25%;
+	transform: translateX(-300px);	
+
+}
+
+body {
+	background: #000;
+}
