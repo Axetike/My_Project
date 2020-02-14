@@ -56,8 +56,8 @@ section {
 	text-transform: uppercase;
 	color: @light;
 	.reg();
-	font-size: 1.2rem;
-	padding: 1rem 3rem;
+	font-size: 1.3rem;
+	padding: 1.4rem 3rem;
 	border-radius: 7px;
 	border: none;
 	&:hover {
@@ -199,6 +199,72 @@ a:hover {
 
 
 
+/* Секция с преимуществами */
+.plus {
+
+	h2 { font-size: 3.6rem;
+		text-align: center;
+		margin: 10rem 0 13rem 0;
+		.bold();
+	}
+	&-img {
+		img {
+			display: block;
+			margin: 0 auto;
+			height: 6.6rem;
+		}
+	}
+	&-block {
+		text-align: center;
+		margin: 0 1rem;
+		h3{
+			.bold();
+			font-size: 2rem;
+			margin: 6.9rem 0 3.5rem 0;
+		}
+		p {
+			font-size: 1.6rem;
+			display: block;
+			margin: 0 auto;
+			width: 25rem;
+
+		}
+	}
+}
+
+.slick-active {
+	outline: none;
+}
+
+/* Стрелки слаидера */
+.arrow {
+	position: absolute;
+	z-index: 99;
+	top: 50%;
+	transform: translateY(-50%);
+	border: none;
+	width: 3rem;
+	height: 3rem;
+}
+
+.prev {
+	left: 0;
+	background: url(../img/larrow.svg) center no-repeat;
+	background-size: 70%;
+}
+
+.next {
+	right: 0;
+	background: url(../img/rarrow.svg) center no-repeat;
+	background-size: 70%;
+}
+
+
+
+
+
+
+
 
 /*Экран md */
 @media (max-width: 991px) {
@@ -233,10 +299,11 @@ a:hover {
 
 @media (max-width: 575px) {
 	html {
-		font-size: 7px;
+		font-size: 8px;
 	}
 	.logo {
 		text-align: center;
 		margin-bottom: 1rem;
 	}
+
 }

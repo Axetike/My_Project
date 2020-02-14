@@ -6,10 +6,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
-   
-
+    
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Автоматизированная штукотурка стен</title>
   </head>
   <body>
@@ -32,7 +31,7 @@
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
               <div class="butt wrap">
                <div class="wrap-block">
-                <button class="btn1 btn-head"> 
+                <button class="btn btn1 btn-head"> 
                 получить консультацию
                 </button>
                </div> 
@@ -70,7 +69,7 @@
                   <input class="form1-input" type="text">
                   <label class="form1-label" for="aa2">Номер телефона</label>
                   <input class="form1-input" type="text">
-                  <button class="btn1 form1-btn" type="submit">Оставьте заявку</button>
+                  <button class="btn btn1 form1-btn" type="submit">Оставьте заявку</button>
                   <p>Приедем в день обращения*</p>
                 </form> 
               </div>
@@ -79,7 +78,60 @@
         </div>
       </div>
     </main>
+	
+	<!-- Секция с преимуществами -->
+	<section class="plus">
+		<div class="container">
+			<!-- Заголовок -->
+			<div class="plus-head">
+				<h2>Преимущества работы с нами </h2>
+			</div>
 
+			<!-- Преимущества -->
+			<div class="plus-slider">
+				<div class="plus-block">
+					<div class="plus-img">
+						<picture>
+							<source srcset="img/plus/icon1.svg" type="image/">
+							<img src="img/plus/icon1.png" alt="">
+						</picture>
+					</div>
+					<h3>Платите по факту </h3>
+					<p>Вы оплачиваете выполненные работы только после их выполнения. <br>Никаких скрытых доплат и промежуточных платежей.</p>
+				</div>
+				<div class="plus-block">
+					<div class="plus-img">
+						<picture>
+							<source srcset="img/plus/icon2.svg" type="image/">
+							<img src="img/plus/icon2.png" alt="">
+						</picture>
+					</div>
+					<h3>Заключаем договор</h3>
+					<p>Перед началом работ заключаем договор на юридическое лицо<br> Вы можете быть уверены, что все обязательства будут выполнены.</p>
+				</div>
+				<div class="plus-block">
+					<div class="plus-img">
+						<picture>
+							<source srcset="img/plus/icon3.svg" type="image/">
+							<img src="img/plus/icon3.png" alt="">
+						</picture>
+					</div>
+					<h3>Точно в срок</h3>
+					<p>Работаем строго по установленным срокам,<br> которые прописаны в договоре. <br>Если не успеваем, Вы платите меньше</p>
+				</div>
+				<div class="plus-block">
+					<div class="plus-img">
+						<picture>
+							<source srcset="img/plus/icon4.svg" type="image/">
+							<img src="img/plus/icon4.png" alt="">
+						</picture>
+					</div>
+					<h3>Экономите на материалах</h3>
+					<p>Мы являемся структурным подразделением компании поставщика строительных смесей gicema.ru <br> и даём  Вам самые выгодные цены.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
@@ -87,6 +139,54 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Подлючения Slick slider -->
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+
+	<!-- Подлючения библиотеки Slick slider -->
+	<script src="slick/slick.min.js"></script>
+
+	<!-- Настроики Slick slider -->
+	<script>
+		$(document).ready(function(){
+		  $('.plus-slider').slick({
+		      infinite: true,
+		      slidesToShow: 4,
+		      slidesToScroll: 1,
+		      responsive: [
+	{
+	  breakpoint: 1221,
+	  settings: {
+	    slidesToShow: 3,
+	    prevArrow: '<button class="arrow prev"></button>',
+	    nextArrow: '<button class="arrow next"></button>',
+	    slidesToScroll: 1,
+
+	    
+	  }
+	},	      
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: '<button class="arrow prev"></button>',
+	    nextArrow: '<button class="arrow next"></button>',
+      }
+    },
+    {
+      breakpoint: 575,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button class="arrow prev"></button>',
+        nextArrow: '<button class="arrow next"></button>',
+      }
+    }
+  ]
+		  });
+		});
+	</script>
+    
   </body>
 </html>
