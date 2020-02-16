@@ -12,6 +12,7 @@
     <title>Автоматизированная штукотурка стен</title>
   </head>
   <body>
+  	<!-- Первый экран -->
     <main class="main">
       <div class="container">
         <!-- Шапка -->
@@ -31,7 +32,7 @@
             <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
               <div class="butt wrap">
                <div class="wrap-block">
-                <button class="btn btn1 btn-head"> 
+                <button class="btn btn1 btn-head popup1-on"> 
                 получить консультацию
                 </button>
                </div> 
@@ -132,10 +133,38 @@
 			</div>
 		</div>
 	</section>
+	
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<!-- Popup  -->
+	<!-- Получить консультацию -->
+	<!-- Всплывающее окно -->
+	<div class="popup1">
+		<!-- Само окно -->
+		<div class="popup1-d">
+			<!-- Содержимое окна -->
+			<div class="popup1-content">
+				<button class="btn popup1-close">&times;</button>
+				<form class="form1 popup1-form1" action="#">
+					<h4 class="popup1-header">Заинтересовало?</h4>
+					<p class="popup1-text">Оставьте контактные данные<br> для связи</p>
+	              	<label class="form1-label" for="aa1">Ваше имя</label>
+	              	<input class="form1-input" type="text">
+	              	<label class="form1-label" for="aa2">Номер телефона</label>
+	              	<input class="form1-input" type="text">
+	              	<label class="form1-label" for="aa3">Сообщения</label>
+	              	<textarea class="form1-input" rows="3"></textarea>
+	              	<button class="btn btn1 form1-btn" type="submit">Оставьте заявку</button>
+                </form>
+			</div>
+		</div>
+	</div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -149,43 +178,53 @@
 	<!-- Настроики Slick slider -->
 	<script>
 		$(document).ready(function(){
+		   /*Всплывающее окно popup1*/
+		   $('.popup1-on').on('click', function(event) {
+		   	event.preventDefault();
+		   	$('.popup1').fadeIn();
+		   });
+		   $('.popup1-close').on('click', function(event) {
+		   	event.preventDefault();
+		   	$('.popup1').fadeOut();
+		   });
+		   
+		  /*Слайдер для секций с преимуществами*/
 		  $('.plus-slider').slick({
 		      infinite: true,
 		      slidesToShow: 4,
 		      slidesToScroll: 1,
 		      responsive: [
-	{
-	  breakpoint: 1221,
-	  settings: {
-	    slidesToShow: 3,
-	    prevArrow: '<button class="arrow prev"></button>',
-	    nextArrow: '<button class="arrow next"></button>',
-	    slidesToScroll: 1,
+			{
+			  breakpoint: 1221,
+			  settings: {
+			    slidesToShow: 3,
+			    prevArrow: '<button class="arrow prev"></button>',
+			    nextArrow: '<button class="arrow next"></button>',
+			    slidesToScroll: 1,
 
-	    
-	  }
-	},	      
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        prevArrow: '<button class="arrow prev"></button>',
-	    nextArrow: '<button class="arrow next"></button>',
-      }
-    },
-    {
-      breakpoint: 575,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: '<button class="arrow prev"></button>',
-        nextArrow: '<button class="arrow next"></button>',
-      }
-    }
-  ]
-		  });
-		});
+			  }
+			},	      
+		    {
+		      breakpoint: 991,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1,
+		        prevArrow: '<button class="arrow prev"></button>',
+			    nextArrow: '<button class="arrow next"></button>',
+		      }
+		    },
+		    {
+		      breakpoint: 575,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+		        prevArrow: '<button class="arrow prev"></button>',
+		        nextArrow: '<button class="arrow next"></button>',
+		      }
+		    }
+		  ]
+				  });
+				});
 	</script>
     
   </body>

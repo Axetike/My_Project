@@ -15,8 +15,8 @@
 }
 /* Жирный шрифт */
 /* Нормальный шрифт */
-/* Colors */
-/* Basic setting */
+/* Цвета */
+/* Основные настроики */
 html {
   font-size: 9px;
 }
@@ -26,10 +26,11 @@ body {
 section {
   padding: 10rem 0;
 }
+/* Стиль кнопок */
 .btn1 {
   background-color: #fdb303;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #fff;
   font-family: 'ProximaNova_reg', sans-serif;
   font-size: 1.3rem;
   padding: 1.4rem 3rem;
@@ -44,7 +45,8 @@ section {
 }
 button:focus,
 input:focus,
-a:focus {
+a:focus,
+textarea:focus {
   outline: none;
 }
 a:hover {
@@ -53,7 +55,7 @@ a:hover {
 /* Section main */
 main {
   padding: 2rem 0;
-  background: #ffffff url(../img/bg.png) center top no-repeat;
+  background: #fff url(../img/bg.png) center top no-repeat;
 }
 main-header {
   height: 7rem;
@@ -100,7 +102,7 @@ main-header {
 }
 .main-block1-text2 {
   display: inline-block;
-  color: #ffffff;
+  color: #fff;
   font-size: 1.8rem;
   background: #70c849;
   padding: 3rem 4rem;
@@ -118,41 +120,42 @@ main-header {
 .main-block2 {
   margin-top: 10rem;
 }
-.main-block2 .form1 {
+.form1 {
   padding: 4rem;
-  background: #ffffff;
+  background: #fff;
   text-align: center;
   font-family: 'ProximaNova_reg', sans-serif;
   /* Заголовок */
 }
-.main-block2 .form1 .title2 {
+.form1 .title2 {
   font-size: 1.8rem;
   margin-bottom: 2.4rem;
 }
-.main-block2 .form1-label {
+.form1-label {
   position: absolute;
   font-size: 1.3rem;
-  background: #ffffff;
+  background: #fff;
   left: 50%;
   transform: translateX(-50%) translateY(-45%);
   padding: 0.5rem;
 }
-.main-block2 .form1-input {
+.form1-input {
   display: block;
   margin: 2.4rem 0;
   width: 100%;
   border: 1px solid #dddddd;
+  border-radius: 5px;
   padding: 1.3rem;
   font-size: 1.8rem;
 }
-.main-block2 .form1-btn {
+.form1-btn {
   display: block;
   width: 100%;
   height: 6rem;
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
 }
-.main-block2 .form1 .p {
+.form1 .p {
   font-size: 1.2rem;
 }
 /* Секция с преимуществами */
@@ -182,6 +185,7 @@ main-header {
   margin: 0 auto;
   width: 25rem;
 }
+/* Настройки слаидера для секций с преимуществами */
 .slick-active {
   outline: none;
 }
@@ -204,6 +208,46 @@ main-header {
   right: 0;
   background: url(../img/rarrow.svg) center no-repeat;
   background-size: 70%;
+}
+/* Всплывающее окно Получить консультацию*/
+.popup1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup1-content {
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+}
+.popup1-form1 {
+  padding: 3.5rem 5rem;
+}
+.popup1-close {
+  position: absolute;
+  top: -0.6em;
+  right: -3rem;
+  font-size: 3rem;
+  color: #fff;
+}
+.popup1 p,
+.popup1 h4 {
+  font-size: 1.8rem;
+}
+.popup1 h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.popup1 p {
+  margin-bottom: 3rem;
 }
 /*Экран md */
 @media (max-width: 991px) {
@@ -230,6 +274,7 @@ main-header {
     font-size: 8px;
   }
 }
+/* Экран */
 @media (max-width: 575px) {
   html {
     font-size: 8px;
