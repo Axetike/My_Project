@@ -192,7 +192,7 @@ main-header {
 /* Стрелки слаидера */
 .arrow {
   position: absolute;
-  z-index: 99;
+  z-index: 2;
   top: 50%;
   transform: translateY(-50%);
   border: none;
