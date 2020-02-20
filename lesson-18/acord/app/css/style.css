@@ -1,0 +1,50 @@
+body {
+	font-family: 'Ubuntu', sans-serif ;
+}
+
+
+/*Основные настроики*/
+
+
+.block1 {
+	text-align: center;
+	margin: 80px 0 70px 0;
+	color: #0bbaf0;
+	text-transform: uppercase;
+} 
+
+.block1 h1 {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.block1 h3 {
+	font-size: 24px;
+}
+
+.card-header {
+	text-align: center;
+	background-color: #0bbaf0;
+}
+
+
+.btn-link {
+	color: #fff;
+	font-size: 23px;
+}
+
+.show {
+	border: 2px solid #dcdcdc;
+	border-top: none;
+}
+
+.card-body {
+	font-size: 24px;
+	color: #535353;
+}
+
+.card {
+	width: 900px;
+	margin: 0 auto;
+}
+
