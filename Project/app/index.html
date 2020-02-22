@@ -134,6 +134,78 @@
 		</div>
 	</section>
 	
+	<!-- Секция с ценами -->
+	<section class="price">
+		<div class="container">
+			<div class="price-head">
+				<div class="row">
+					<div class="col-lg-6 offset-lg-3">
+						<h2 class="price-h">Цены</h2>
+						<p class="price-p">Выберите вариант, который подходит Вам:</p>
+					</div>
+					<div class="col-lg-3">
+						<button class="btn btn1 price-btn">Рассчитать точую стоимость</button>
+					</div>
+				</div>
+			</div>
+			<div class="price-list">
+				<div class="row">
+					<!-- Блок 1 -->
+					<div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1">
+						<div class="price-block">
+							<h4>Штукатурка вашим материалом</h4>
+							<img src="img/price-block/price1.jpg" alt="aaaaaa">
+							<p>от <strong>300</strong> руб/м2</p>
+							<div class="price-block-ul">
+								<ul>
+									<li class="price-block-li">Проведение работ</li>
+									<li class="price-block-li">Уборка</li>
+								</ul>
+							</div>
+							<button class="btn btn1">Заказать</button>
+						</div>
+					</div>
+					<!-- Блок 2 -->
+					<div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1">
+						<div class="price-block">
+							<h4>Штукатурка вашим материалом</h4>
+							<img src="img/price-block/price2.jpg" alt="aaaaaa">
+							<p>от <strong>530</strong> руб/м2</p>
+							<div class="price-block-ul">
+								<ul>
+									<li class="price-block-li"> Завоз материала и его подъём</li>
+									<li class="price-block-li">Проведение работ</li>
+									<li class="price-block-li">Уборка</li>
+									<li class="price-block-li">Гарантия 2 года</li>
+								</ul>
+							</div>
+							<button class="btn btn1">Заказать</button>
+							
+						</div>
+					</div>
+					<!-- Блок 3 -->
+					<div class="col-lg-4 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-10 offset-1">
+						<div class="price-block">
+							<h4>Штукатурка под обои и не только</h4>
+							<img src="img/price-block/price3.jpg" alt="aaaaaa">
+							<p>от <strong>560</strong> руб/м2</p>
+							<div class="price-block-ul">
+								<ul>
+									<li class="price-block-li"> Завоз материала и его подъём</li>
+									<li class="price-block-li">Проведение работ</li>
+									<li class="price-block-li">Уборка</li>
+									<li class="price-block-li">Гарантия 2 года</li>
+									<li class="price-block-li"> Можно сразу клеить обои</li>
+								</ul>
+							</div>
+							<button class="btn btn1">Заказать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 
 
 
@@ -160,10 +232,12 @@
                 </form>
 			</div>
 		</div>
+		<!-- Закрыть окно -->
+			<div class="popup1-bg-close"></div>
 	</div>
 
 
-
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -184,6 +258,10 @@
 		   	$('.popup1').fadeIn();
 		   });
 		   $('.popup1-close').on('click', function(event) {
+		   	event.preventDefault();
+		   	$('.popup1').fadeOut();
+		   });
+		   $('.popup1-bg-close').on('click', function(event) {
 		   	event.preventDefault();
 		   	$('.popup1').fadeOut();
 		   });

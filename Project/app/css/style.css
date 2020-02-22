@@ -52,6 +52,7 @@ textarea:focus {
 a:hover {
   text-decoration: none;
 }
+/* 1 секция */
 /* Section main */
 main {
   padding: 2rem 0;
@@ -158,6 +159,7 @@ main-header {
 .form1 .p {
   font-size: 1.2rem;
 }
+/* 2 секция */
 /* Секция с преимуществами */
 .plus h2 {
   font-size: 3.6rem;
@@ -209,6 +211,77 @@ main-header {
   background: url(../img/rarrow.svg) center no-repeat;
   background-size: 70%;
 }
+/* 3 секция */
+.price {
+  background: #70c849 url(../img/bg-green.jpg) center;
+  /* Блоки */
+}
+.price-head {
+  text-align: center;
+  color: #fff;
+}
+.price-h {
+  font-size: 3.6rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.price-p {
+  font-size: 1.8rem;
+  margin: 4rem 0 8rem 0;
+}
+.price-btn {
+  margin-top: 2.5rem;
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.04);
+  text-align: right;
+  margin-bottom: 5rem;
+}
+.price-block {
+  width: 100%;
+  position: relative;
+  padding: 5rem 4.6em;
+  text-align: center;
+  box-shadow: 0 14px 21px rgba(0, 0, 0, 0.17);
+  background-color: #ffffff;
+  margin-bottom: 3rem;
+}
+.price-block h4 {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 3rem;
+}
+.price-block img {
+  width: 100%;
+}
+.price-block p {
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin: 3rem 0;
+}
+.price-block p strong {
+  font-size: 3rem;
+}
+.price-block-ul {
+  height: 20rem;
+  line-height: 3rem;
+}
+.price-block-ul ul {
+  list-style-type: none;
+  font-size: 1.8rem;
+  padding: 0;
+}
+.price-block-ul ul li:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: url(../img/price-block/checked.svg) no-repeat center;
+  background-size: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+.price-block button {
+  font-size: 1.8rem;
+  padding: 2rem 5.6rem;
+}
 /* Всплывающее окно Получить консультацию*/
 .popup1 {
   display: none;
@@ -231,6 +304,7 @@ main-header {
 }
 .popup1-form1 {
   padding: 3.5rem 5rem;
+  z-index: 20;
 }
 .popup1-close {
   position: absolute;
@@ -238,6 +312,17 @@ main-header {
   right: -3rem;
   font-size: 3rem;
   color: #fff;
+}
+.popup1-bg-close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0);
 }
 .popup1 p,
 .popup1 h4 {
