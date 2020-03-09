@@ -34,8 +34,9 @@
   /* Цвета */
 @btn-color: #fdb303;
 @icon-colors: #70c849;
+@icon-colors-d: #358015;
 @text-color: #1a1820;
-@bg-color1: #dee0d3;
+@bg-color1: #f5f5f5;
 @light: #fff;
 
 
@@ -46,6 +47,7 @@ html {
 
 body {
 	font-family: 'ProximaNova_reg' , sans-serif !important;
+	color: @text-color;
 }
 section {
 	padding: 10rem 0;
@@ -69,6 +71,54 @@ section {
 	}
 }
 
+
+h2 {
+	font-size: 3.6rem;
+	.bold();
+	margin-top: 2rem;
+}
+
+/* Форма */
+.form1 {
+	padding: 4rem;
+	background: @light;
+	text-align: center; 
+	.reg();
+
+	/* Заголовок */
+	.title2 {
+		font-size: 1.8rem;
+		margin-bottom: 2.4rem;
+	}
+	&-label {
+		position: absolute;
+		font-size: 1.3rem;	
+		background: @light;
+		left: 50%;
+		transform: translateX(-50%)  translateY(-45%) ;
+		padding: 0.5rem;
+	}
+
+	&-input {
+		display: block;
+		margin: 2.4rem 0;
+		width: 100%;
+		border: 1px solid #dddddd;
+		border-radius: 5px;
+		padding: 1.3rem;
+		font-size: 1.8rem;
+
+	}
+
+	&-btn {
+		display: block;
+		width: 100%;
+		height: 6rem;
+		font-size: 1.6rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
 button, input, a, textarea {
 	&:focus {
 		outline: none;
@@ -78,6 +128,8 @@ button, input, a, textarea {
 a:hover {
 	text-decoration: none;
 }
+
+
  							
 
 
@@ -161,43 +213,7 @@ a:hover {
 }
 
 .form1 {
-	padding: 4rem;
-	background: @light;
-	 text-align: center; 
-	.reg();
-
-	/* Заголовок */
-	.title2 {
-		font-size: 1.8rem;
-		margin-bottom: 2.4rem;
-	}
-	&-label {
-		position: absolute;
-		font-size: 1.3rem;	
-		background: @light;
-		left: 50%;
-		transform: translateX(-50%)  translateY(-45%) ;
-		padding: 0.5rem;
-	}
-
-	&-input {
-		display: block;
-		margin: 2.4rem 0;
-		width: 100%;
-		border: 1px solid #dddddd;
-		border-radius: 5px;
-		padding: 1.3rem;
-		font-size: 1.8rem;
-
-	}
-
-	&-btn {
-		display: block;
-		width: 100%;
-		height: 6rem;
-		font-size: 1.6rem;
-		margin-bottom: 1.5rem;
-	}
+	
 	.p {
 		font-size: 1.2rem;
 	}
@@ -209,10 +225,9 @@ a:hover {
 
 /* Секция с преимуществами */
 .plus {
-	h2 { font-size: 3.6rem;
+	h2 {
 		text-align: center;
-		margin: 10rem 0 13rem 0;
-		.bold();
+		margin-bottom: 13rem;
 	}
 
 	&-img {
@@ -281,10 +296,6 @@ a:hover {
 		text-align: center;
 		color: @light;
 	}
-	&-h {
-		font-size: 3.6rem;
-		.bold();
-	}
 	&-p {
 		font-size: 1.8rem;
 		margin: 4rem 0 8rem 0;
@@ -315,6 +326,7 @@ a:hover {
 
 		img {
 			width: 100%;
+			height: 200px;
 		}
 
 		p {
@@ -356,8 +368,203 @@ a:hover {
 
 
 
+/* Секция с отзывами */
+
+.feedback {
+	position: relative;
+	background: @light  url(../img/feedback/bg.jpg) top left;
+	text-align: center;
+	/* Настроики фона */
+	&-bg {
+		position: absolute;
+		bottom: 0;
+		left: -5rem;
+	}
+
+	&-slider {
+		background-color: @light;
+		padding: 5rem;
+		margin: 10rem 5rem;
+		box-shadow: 0 12px 18px rgba(0, 0, 0, 0.11);
+	}
+	&-text {
+		text-align: left;
+		margin-left: 2rem;
+		font-size: 1.6rem;
+		p {
+		line-height: 2;
+		}
+		.comments {
+			margin-top: 5rem;
+			.user {
+
+				&-picture {
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					background-color: #1a1820;
+					float: left;
+					margin-right: 2rem;
+				}
+				&-info {
+					line-height: 0.3;
+				}
+			}
+			&-text {
+				margin-top: 3rem;
+				border: 2px solid #49bf15;
+				padding: 2rem;
+				i {
+
+				}
+			}
+			.triangle {
+				position: relative;
+				background: @light;
+				width: 1rem; 
+				height: 2rem; 
+				border: 2px solid #49bf15;
+				border-top-right-radius: 100%;
+				border-bottom: none;
+				top: 3.2rem;
+				left: 3rem;
+			}
+		}
+	}
+
+	&-form {
+		margin: 10rem 0;
+		.form1 {
+			text-align: center;
+			h2 {
+				margin-bottom: 3rem;
+			}
+			label {
+				top: 2.2rem;
+			}
+			&-btn {
+				margin-top: 3rem;
+				display: inline-block;
+				width: 28rem;
+			}
+		}
+	}
+
+	/* Настройки стрелок  */
+	&-btn {
+		position: absolute;
+		border-radius: 0;
+		background-color: @icon-colors;
+		padding: 2rem;
+		img {
+			width: 1.3rem;
+			height: 2rem;
+		}
+	}
+	&-prevbtn {
+		top: 50%;
+		transform: translateY(-50%);
+		left: -3.3rem;
+	}
+	&-nextbtn {
+		top: 50%;
+		transform: translateY(-50%);
+		right: -3.3rem;
+	}
+
+}
 
 
+/* Секция "Схема работы" */
+.scheme {
+	text-align: center;
+	background-color: #000;
+	background: url(../img/Scheme/bg.png) bottom right no-repeat;
+	background-position-x: 80rem;
+	background-size: 60%;
+	padding-bottom: 5rem;
+	&-header {
+		p {
+			font-size: 1.8rem;
+			margin: 4rem 0 12rem 0;
+		}
+	}
+	&-sequence {
+		&-block {
+			height: 35rem;
+			text-align: left;
+			margin-bottom: 3rem;
+			.img {
+				height: 13rem;
+			}
+			h4 {
+				font-size: 2.2rem;
+				.bold();
+				margin: 3rem 0;
+			}	
+			p {
+				font-size: 1.7rem;
+			}
+		}
+
+	}
+	
+}
+
+
+ /* Все на 100% включено!  */
+ .all_inclusive {
+ 	background: @bg-color1;
+ 	&-header {
+ 		text-align: center;
+ 		h2 {
+ 			color: @icon-colors-d;
+ 		}
+ 		p {
+ 			font-size: 1.8rem;
+ 			margin: 4rem 0 12rem 0;
+ 		}
+ 	}
+ 	&-list {
+ 		&-item {
+ 			height: 8rem;
+ 			margin-bottom: 12rem;
+ 			.circle1 {
+ 				display: inline-block;
+				width: 50px;
+				height: 50px;
+				border: 2px solid @icon-colors-d;
+				border-radius: 50%;
+				padding: 3px;
+				float: left;
+				margin: 0 2rem 1rem 0;
+	 			.circle {
+					display: table;
+	 				text-align: center;
+	 				width: 40px;
+	 				height: 40px;
+	 				background-color: @icon-colors-d;
+	 				border-radius: 50%;
+	 				span {
+	 					display: table-cell;
+	 					color: @light;
+	 					font-size: 2.4rem;
+	 					.bold();
+	 					vertical-align: middle;
+	 				}
+	 			}
+ 			}
+			.text {
+				position: relative;
+				font-size: 1.3rem;
+				top: 1.8rem;
+				strong {
+					font-size: 1.6rem;
+				}
+			}
+ 		}
+ 	}
+ }
 
 
 /* Всплывающее окно Получить консультацию*/
@@ -437,7 +644,32 @@ a:hover {
 		text-align: center;
 		}
 	}
+
+	/* Отзывы */
+	.feedback {
+		&-text {
+			margin-top: 6rem;
+		}
+		&-bg {
+			left: -25rem;
+		}
+	}
+	
+
+	/*	Схема работы*/
+	.scheme {
+		background: none;
+	}
+
+	/* Все включено */
+		.all_inclusive-list-item {
+			margin-bottom: 8rem;
+		}
 }
+
+
+
+
 /* Экран sm */
 @media (max-width: 767px) {
 	.wrap-block {
@@ -452,7 +684,19 @@ a:hover {
 	html {
 		font-size: 8px;
 	}
+
+	/* Отзывы */
+	.feedback {
+		&-bg {
+			display: none;
+		}
+	}
 }
+
+
+
+
+
 /* Экран */
 @media (max-width: 575px) {
 	html {
@@ -476,4 +720,27 @@ a:hover {
     }
 
 
+/* Отзывы */
+	.feedback {
+		&-form {
+			.form1-btn {
+			width: 100%;
+			}
+		}	
+	}
+
+/*	Схема работы*/
+	.scheme {
+		&-sequence {
+			&-block {
+				height: 40rem;
+				text-align: center;
+			}
+		}
+	}
+
+/* Все включено */
+	.all_inclusive-list-item {
+		margin-bottom: 6rem;
+	}
 }
