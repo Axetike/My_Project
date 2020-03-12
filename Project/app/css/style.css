@@ -458,6 +458,110 @@ main-header {
 .all_inclusive-list-item .text strong {
   font-size: 1.6rem;
 }
+/* Проблемы */
+.problem {
+  min-height: 88rem;
+  position: relative;
+}
+.problem-bg {
+  position: absolute;
+  width: 34rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-22rem);
+}
+.problem-header {
+  text-align: center;
+  margin: 9rem;
+}
+.problem-block {
+  border: 4px solid #e8e8e8;
+  padding: 4rem;
+}
+.problem-block h3 {
+  font-size: 2.4rem;
+  color: #313131;
+  opacity: 0.5;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 4.2rem;
+}
+.problem-block ul {
+  font-size: 1.8rem;
+  list-style: none;
+}
+.problem-block ul li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+.problem-block ul li::before {
+  content: '';
+  display: block;
+  background: url(../img/problem/cancel.png) center no-repeat;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: -4rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.problem-block2 {
+  border: 4px solid #358015;
+}
+.problem-block2 h3 {
+  opacity: 1;
+}
+.problem-block2 ul li::before {
+  background: url(../img/problem/checked.png) center no-repeat;
+}
+/* Материалы */
+.materials {
+  background: url(../img/feedback/bg.jpg);
+  text-align: center;
+}
+.materials-header .header {
+  font-size: 1.9rem;
+  margin: 5rem 0 8rem 0;
+}
+.materials-block img {
+  margin-bottom: 2.5rem;
+}
+.materials-block-name {
+  font-size: 2.2rem;
+}
+.materials-block p {
+  font-size: 1.7rem;
+}
+.materials-block a {
+  display: inline-block;
+  color: #70c849;
+  font-size: 1.6rem;
+  margin: 4rem 0 8rem 0;
+  -webkit-text-decoration: underline #e8e8e8;
+          text-decoration: underline #e8e8e8;
+}
+.materials-text {
+  margin: 9rem 0;
+}
+.materials-text p {
+  font-size: 2rem;
+}
+.materials-text a {
+  color: #70c849;
+}
+/* Узри */
+.look {
+  background: url(../img/bg-iook.jpg) center no-repeat;
+  background-size: cover;
+}
+.look-block1 h1 {
+  font-size: 4.2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin-bottom: 5rem;
+}
+.look-block1 p {
+  font-size: 2.2rem;
+}
 /* Всплывающее окно Получить консультацию*/
 .popup1 {
   display: none;
@@ -512,6 +616,10 @@ main-header {
 }
 /*Экран md */
 @media (max-width: 991px) {
+  /* Основные настроики */
+  section {
+    padding: 8rem 0;
+  }
   .tell2 {
     text-align: center;
   }
@@ -536,9 +644,27 @@ main-header {
   .all_inclusive-list-item {
     margin-bottom: 8rem;
   }
+  /* Проблемы */
+  .problem-bg {
+    display: none;
+  }
+  .problem-block1 {
+    margin-bottom: 5rem;
+  }
+  /* Узри */
+  .look {
+    background: url(../img/bg-iook.jpg) top left no-repeat;
+  }
 }
 /* Экран sm */
 @media (max-width: 767px) {
+  /* Основные настроики */
+  section {
+    padding: 6rem 0;
+  }
+  html {
+    font-size: 8px;
+  }
   .wrap-block {
     text-align: center;
     transform: translateY(3rem);
@@ -546,16 +672,24 @@ main-header {
   .main {
     background-position: left top;
   }
-  html {
-    font-size: 8px;
-  }
   /* Отзывы */
   .feedback-bg {
     display: none;
   }
+  /* Узри */
+  .look {
+    text-align: center;
+  }
+  .look-block1 {
+    margin-bottom: 2rem;
+  }
 }
 /* Экран */
 @media (max-width: 575px) {
+  /* Основные настроики */
+  section {
+    padding: 4rem 0;
+  }
   html {
     font-size: 8px;
   }

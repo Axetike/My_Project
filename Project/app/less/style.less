@@ -567,6 +567,133 @@ a:hover {
  }
 
 
+ /* Проблемы */
+ .problem {
+ 	min-height: 88rem;
+ 	position: relative;
+ 	&-bg {
+ 		position: absolute;
+ 		width: 34rem; 
+ 		bottom: 0;
+ 		left: 50%;
+ 		transform: translateX(-22rem);
+
+ 	}
+ 	&-header {
+ 		text-align: center;
+ 		margin: 9rem;
+ 	}
+
+ 	&-block { 
+ 		border: 4px solid #e8e8e8;
+ 		padding: 4rem;
+ 		h3 {
+ 			font-size: 2.4rem;
+ 			color: #313131;
+ 			opacity: 0.5;
+ 			.bold();
+ 			margin-bottom: 4.2rem;
+ 		}
+ 		ul {
+ 			font-size: 1.8rem;
+ 			list-style: none;
+ 			li {
+ 				position: relative;
+ 				padding-left: 1rem;
+ 				margin-bottom: 2rem;
+ 				&::before {
+ 					content: '';
+ 					display: block;
+					background: url(../img/problem/cancel.png) center no-repeat;
+					width: 2rem;
+					height: 2rem;
+					position: absolute;
+					left: -4rem;
+					top: 50%;
+					transform: translateY(-50%);
+ 				}
+ 			}
+ 		}
+ 	}
+
+ 	&-block2 {
+ 		border: 4px solid @icon-colors-d;
+ 		h3 {
+ 			opacity: 1; 
+ 		}
+ 		ul {
+ 			li {
+ 				&::before {
+					background: url(../img/problem/checked.png) center no-repeat;
+ 				}
+ 			}
+ 		}
+ 	}
+ }
+
+
+ /* Материалы */
+ .materials {
+ 	background: url(../img/feedback/bg.jpg);
+ 	text-align: center;
+ 	&-header {
+ 		.header {
+ 			font-size: 1.9rem;
+ 			margin: 5rem 0 8rem 0;
+ 		}
+ 	}
+ 	&-block {
+ 		img {
+ 			margin-bottom: 2.5rem;
+ 		}
+ 		&-name {
+ 			font-size: 2.2rem;
+ 		}
+ 		p {
+ 			font-size: 1.7rem;
+ 			}
+ 		a {
+ 			display: inline-block;
+ 			color: @icon-colors;
+ 			font-size: 1.6rem;
+			margin: 4rem 0 8rem 0;
+			text-decoration: underline #e8e8e8;
+ 		}
+ 	}
+
+ 	&-text {
+ 		margin: 9rem 0;
+ 		p {
+ 			font-size: 2rem;
+ 		}
+ 		a {
+ 			color: @icon-colors;
+ 		}
+ 	}
+ }
+
+
+
+/* Узри */
+.look {
+	background: url(../img/bg-iook.jpg) center no-repeat;
+	background-size: cover;
+	
+	&-block1 {
+		h1 {
+			font-size: 4.2rem;
+			.bold();
+			margin-bottom: 5rem;
+		}
+		p {
+			font-size: 2.2rem;	
+		}
+	}
+
+}
+
+
+
 /* Всплывающее окно Получить консультацию*/
 .popup1 {
 	display: none;
@@ -635,6 +762,11 @@ a:hover {
 
 /*Экран md */
 @media (max-width: 991px) {
+	/* Основные настроики */
+	section {
+		padding: 8rem 0;
+	}
+
 	.tell2 {
 		text-align: center;
 	}
@@ -662,9 +794,27 @@ a:hover {
 	}
 
 	/* Все включено */
-		.all_inclusive-list-item {
-			margin-bottom: 8rem;
+	.all_inclusive-list-item {
+		margin-bottom: 8rem;
+	}
+
+	/* Проблемы */
+	.problem {
+		&-bg {
+			display: none;
 		}
+
+		&-block1 {
+			margin-bottom: 5rem;
+		}
+	}
+
+
+	/* Узри */
+	.look {
+		background: url(../img/bg-iook.jpg) top left no-repeat;
+	}
+
 }
 
 
@@ -672,6 +822,17 @@ a:hover {
 
 /* Экран sm */
 @media (max-width: 767px) {
+
+	/* Основные настроики */
+	section {
+		padding: 6rem 0;
+	}
+
+	html {
+		font-size: 8px;
+	}
+	
+
 	.wrap-block {
 		text-align: center;
 		transform: translateY(3rem);
@@ -681,14 +842,21 @@ a:hover {
 		background-position: left top;
 	}
 
-	html {
-		font-size: 8px;
-	}
+	
 
 	/* Отзывы */
 	.feedback {
 		&-bg {
 			display: none;
+		}
+	}
+
+	/* Узри */
+	.look {
+		
+		text-align: center;
+		&-block1 {
+			margin-bottom: 2rem;
 		}
 	}
 }
@@ -699,9 +867,15 @@ a:hover {
 
 /* Экран */
 @media (max-width: 575px) {
+	/* Основные настроики */
+	section {
+		padding: 4rem 0;
+	}
+	
 	html {
 		font-size: 8px;
 	}
+
 	.logo {
 		text-align: center;
 		margin-bottom: 1rem;
