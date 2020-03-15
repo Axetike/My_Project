@@ -29,7 +29,8 @@ section {
 }
 /* Стиль кнопок */
 .btn1 {
-  background-color: #fdb303;
+  background: #fdb303;
+  box-shadow: 4px 7px 13px rgba(0, 0, 0, 0.06);
   text-transform: uppercase;
   color: #fff;
   font-family: 'ProximaNova_reg', sans-serif;
@@ -40,14 +41,26 @@ section {
 }
 .btn1:hover {
   cursor: position;
-  background-color: #db9a02;
+  background-color: #cb9002;
   color: #ededed;
-  transform: scale(1.02);
+  transform: scale(0.99);
 }
-h2 {
+/* Заголовок */
+.header h2 {
   font-size: 3.6rem;
   font-family: 'ProximaNova_bold', sans-serif;
   margin-top: 2rem;
+}
+.header p {
+  font-size: 1.8rem;
+  margin: 4rem 0 8rem 0;
+}
+/* Настроики шрифтов */
+p {
+  font-size: 1.6rem;
+}
+a {
+  color: #1a1820;
 }
 /* Форма */
 .form1 {
@@ -58,8 +71,9 @@ h2 {
   /* Заголовок */
 }
 .form1 .title2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 2.4rem;
+  font-family: 'ProximaNova_bold', sans-serif;
 }
 .form1-label {
   position: absolute;
@@ -216,22 +230,17 @@ main-header {
   background: url(../img/rarrow.svg) center no-repeat;
   background-size: 70%;
 }
-/* 3 секция */
+/* Секция с ценами*/
 .price {
-  background: #70c849 url(../img/bg-green.jpg) center;
+  background: #358015 url(../img/bg-green.jpg) center;
   /* Блоки */
 }
 .price-head {
   text-align: center;
   color: #fff;
 }
-.price-p {
-  font-size: 1.8rem;
-  margin: 4rem 0 8rem 0;
-}
 .price-btn {
   margin-top: 2.5rem;
-  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.04);
   text-align: right;
   margin-bottom: 5rem;
 }
@@ -387,10 +396,6 @@ main-header {
   background-size: 60%;
   padding-bottom: 5rem;
 }
-.scheme-header p {
-  font-size: 1.8rem;
-  margin: 4rem 0 12rem 0;
-}
 .scheme-sequence-block {
   height: 35rem;
   text-align: left;
@@ -416,10 +421,6 @@ main-header {
 }
 .all_inclusive-header h2 {
   color: #358015;
-}
-.all_inclusive-header p {
-  font-size: 1.8rem;
-  margin: 4rem 0 12rem 0;
 }
 .all_inclusive-list-item {
   height: 8rem;
@@ -521,7 +522,6 @@ main-header {
 }
 .materials-header .header {
   font-size: 1.9rem;
-  margin: 5rem 0 8rem 0;
 }
 .materials-block img {
   margin-bottom: 2.5rem;
@@ -558,9 +558,78 @@ main-header {
   font-size: 4.2rem;
   font-family: 'ProximaNova_bold', sans-serif;
   margin-bottom: 5rem;
+  text-transform: uppercase;
 }
 .look-block1 p {
   font-size: 2.2rem;
+}
+/* Дополнительные учлуги */
+.add {
+  background: #358015 url(../img/bg-green.jpg);
+  text-align: center;
+  color: #fff;
+}
+.add-block p {
+  margin: 3rem 0;
+  font-size: 2rem;
+}
+.add-block-btn {
+  font-size: 1.6rem;
+  padding: 2rem 5.5rem;
+  margin-bottom: 7rem;
+}
+/* Контакты */
+.contacts {
+  background: url(../img/bg-contacts.jpg) center no-repeat;
+  background-size: cover;
+}
+.contacts h1 {
+  font-size: 3.6rem;
+  margin-bottom: 1.2rem;
+}
+.contacts p {
+  margin-top: 3rem;
+}
+.contacts-map {
+  margin-top: 3rem;
+}
+.contacts-tel a {
+  display: inline-block;
+  margin-top: -0.8rem;
+  font-size: 1.8rem;
+  color: #1a1820;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.contacts-mail a {
+  display: inline-block;
+  margin-top: -0.8rem;
+  font-size: 1.6rem;
+  color: #292929;
+  text-decoration: underline;
+}
+/* Подвал */
+.footer {
+  padding: 3.7rem 0;
+}
+.footer a {
+  display: block;
+}
+.footer-contacts {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.footer-tel {
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.footer-creator {
+  text-align: right;
+}
+.footer-creator strong {
+  display: inline-block;
+  margin-top: -1rem;
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
 }
 /* Всплывающее окно Получить консультацию*/
 .popup1 {
@@ -616,8 +685,7 @@ main-header {
 }
 /*Экран md */
 @media (max-width: 991px) {
-  /* Основные настроики */
-  section {
+  Основные настроики section {
     padding: 8rem 0;
   }
   .tell2 {
@@ -629,6 +697,7 @@ main-header {
   .main-block1 {
     text-align: center;
   }
+  /* Цены */
   /* Отзывы */
   .feedback-text {
     margin-top: 6rem;
@@ -678,10 +747,33 @@ main-header {
   }
   /* Узри */
   .look {
+    background: none;
     text-align: center;
   }
   .look-block1 {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+  }
+  .look-block1 h1 {
+    margin-bottom: 1rem;
+  }
+  /* Контакты */
+  .contacts {
+    text-align: center;
+  }
+  .contacts-requisites {
+    margin-bottom: 8rem;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer-logo {
+    margin-bottom: 5rem;
+  }
+  .footer-contacts {
+    margin-bottom: 5rem;
+  }
+  .footer-creator {
+    text-align: center;
   }
 }
 /* Экран */
