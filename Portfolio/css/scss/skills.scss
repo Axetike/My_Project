@@ -1,0 +1,39 @@
+.skills {
+    text-align: center;
+    padding: 12rem 0 11rem 0;
+    &-hdr {
+        margin: 0rem 0 6rem 0;
+    }
+    &-list {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 8.7rem;
+        p {
+            font-size: 17px;
+            line-height: 17px;
+            text-align: center;
+            color: #828282;
+            margin: 2.7rem 0 4rem 0;
+        }
+    }
+    &-box {
+        width: 25%;
+        margin-bottom: 10rem;
+        &-star {
+            img {
+                margin-right: 0.9rem; 
+            }
+        }
+    }
+}
+
+.star-active {
+    filter: invert(80%);
+}
+
+

@@ -1,0 +1,101 @@
+/*Основные настроики*/
+@import "settings.scss";
+
+/*Панель навигаций*/
+@import "nav.scss";
+
+/*Панель навигаций*/
+@import "header.scss";
+
+/*Панель навигаций*/
+@import "aboutme.scss";
+
+/*Навыки*/
+@import "skills.scss";
+
+/*Портфолио*/
+@import "portfolio.scss";
+
+/*Контакты*/
+@import "contacts.scss";
+
+@import "nav-mobile.scss";
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .skills {
+        &-list {
+            flex-wrap: wrap;
+        }
+        &-box {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 580px;
+    }
+    .nav {
+        display: none;
+    }
+    
+// Гамбургер
+    .nav-burger-box {
+        display: block;
+    }
+    
+    .header {
+        padding: 0;
+        
+        &-text {
+            p {
+               margin-right: 0; 
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 360px;
+    }
+    
+    .header {
+        padding: 0;
+        &-content {
+            margin-top: 2rem;
+        }
+        &-text {
+            flex-direction: column;
+            justify-content: flex-start;
+            h1 {
+                position: relative;
+                margin-right: auto;
+                margin-bottom: 2rem;
+            }
+            p {
+                margin-right: auto;
+                margin-left: 0;
+            }
+           
+        }
+    }
+    
+    .aboutme {
+        &-text {
+            width: 100%;
+        }
+    }
+    
+    .skills {
+        &-box {
+            width: 100%;
+        }
+    }
+}
