@@ -70,7 +70,7 @@ h2.hdr {
   width: 100%;
   height: 4px;
   background-color: #070707;
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.4s ease-in;
 }
 .nav-burger-box {
   z-index: 99;
