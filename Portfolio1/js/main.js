@@ -1,6 +1,6 @@
 // Адаптивное изображения
 if (window.innerWidth <= 480) {
-  document.querySelector('.header-img1').src = "/img/Img-us-102.jpg";
+  document.querySelector('.header-img1').src = "img/Img-us-102.jpg";
 }
 
 
