@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1 class="title">Таймер</h1>
+	<button class="btn-start-stop">Старт</button>
+	<div class="content">
+		<div class="arrows-block arrows-app">
+			<div class="time-arrow time-add" data-app="hours"></div>
+			<div class="time-arrow time-add" data-app="minutes"></div>
+			<div class="time-arrow time-add" data-app="seconds"></div>
+		</div>
+	
+		<div class="clock">
+			<div class="time hours" data-time="hours">00</div>
+			<div class="time minutes" data-time="minutes">00</div>
+			<div class="time seconds" data-time="seconds">00</div>
+		</div>
+		<div class="arrows-block arrows-down">
+			<div class="time-arrow time-subtract" data-subtract="hours"></div>
+			<div class="time-arrow time-subtract" data-subtract="minutes"></div>
+			<div class="time-arrow time-subtract" data-subtract="seconds"></div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
