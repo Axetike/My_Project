@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <!------Мета теги для рассылки------>
+        <meta property="og:title" content=""><!-- описание страницы -->
+        <meta property="og:description" content="">
+        <!-- ссылка на изображение, которое будет публиковаться в записи -->
+        <meta property="og:image" content="">
+        <!-- ссылка на текущую страницу -->
+        <meta property="og:url" content=" ">
+        <!-- название сайта -->
+        <meta property="og:site_name" content="">
+
+        <!-- Тип карты, по умолчанию используется summary -->
+        <meta name="twitter:card" content="summary">
+        <!-- Имя/логин автора -->
+        <meta name="twitter:site" content="">
+        <!-- Название страницы -->
+        <meta name="twitter:title" content="">
+        <!-- Описание страницы -->
+        <meta name="twitter:description" content="">
+        <!-- Cсылка на изображение -->
+        <meta name="twitter:image" content="">
+        
+        <title>Это шаблон</title>
+
+        <!--Подключение стилей-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--Подключение шрифтов-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Condensed:wght@300;400;700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+    	<header class="header">
+			<div class="burger">
+				<span class="burger__content"></span>
+			</div>	
+    	</header>
+    	<nav class="nav">
+			<div class="nav__content">
+				<div class="nav__title">Меню</div>	
+				<div class="nav__block">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="#home" class="nav__ref">Главное</a></li>
+						<li class="nav__item"><a href="#about-me" class="nav__ref">Обо мне</a></li>
+						<li class="nav__item"><a href="#my-works" class="nav__ref">Работы</a></li>
+						<li class="nav__item"><a href="#contacts" class="nav__ref">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+    	</nav>
+    	<main>
+    		<section id="home" class="home">
+    			<div class="home__bg">
+    				<div class="container">
+    					<div class="home__content">
+    						<div class="home__img">
+    							<img src="img/home/Ava.jpg" alt="">
+    						</div>
+    						<div class="home__info">
+    							<h1 class="home__title">Танашев Астемир</h1>
+    							<p class="home__text main__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati qui eligendi quo natus repellendus explicabo hic delectus ipsa officiis repellat.</p>
+    							<a href="#contacts" class="home__btn btn">Написать</a>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</section>
+    		<section id="about-me" class="about-me">
+    			<div class="container">
+    				<div class="about-me__content">
+    					<h2 class = "main__title">Обо мне</h2>
+    					<p class="main__text">
+    					     Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Amet blanditiis dicta sunt ducimus, eos expedita impedit in laborum natus beatae minus esse? Laborum cumque earum ullam molestias. Accusamus quos quisquam voluptas veritatis eum deleniti provident nemo exercitationem molestiae voluptatum non eaque, consectetur. Aut dolorem consequuntur, praesentium sapiente rerum vero eveniet quidem neque nobis omnis libero!
+    					</p>
+    				</div>
+    			</div>
+    		</section>
+            <section id="my-works" class="my-works">
+                <div class="container">
+                    <h2 class = "my-works__title main__title">Мои работы</h2>
+                </div>
+                <div class="my-works__content">
+                    <div class="slider__wrapper">
+                        <div class="slider__row">
+                            <div class="slider__item">
+                                <img src="img/my_works/1.jpg" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img src="img/my_works/2.jpg" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img src="img/my_works/1.jpg" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img src="img/my_works/2.jpg" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img src="img/my_works/2.jpg" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img src="img/my_works/2.jpg" alt="">
+                            </div>
+                            <div class="slider__item">
+                                <img src="img/my_works/2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__btn-block">
+                        <button class="slider__btn slider__btn-left"></button>
+                        <span class="slider__decorative-line"></span>
+                            <div class="slider__slide-num slider__slide-num-pos">1</div>
+                            <span>&#160; / &#160;</span>
+                            <div class="slider__slide-num slider__slide-num-all">0</div>
+                        <span class="slider__decorative-line"></span>
+                        <button class="slider__btn slider__btn-right"></button>
+                    </div>
+                </div>
+
+            </section>
+    		<section id="contacts" class="contacts">
+    			<div class="contacts__content">
+    				<h2 class = "main__title">Контакты</h2>
+    				<div class="contacts__list">
+    					<div class="contacts__item-block">
+    						<a href="https://vk.com/astik1" class="contacts__item">
+    							<span class="contacts__imgVK"></span>
+    						</a>
+    						<span class="contacts__ref">https://vk.com/astik1</span>
+    					</div>
+    					<div class="contacts__item-block">
+    						<a href="https://vk.com/astik1" class="contacts__item">
+    							<span class="contacts__imgFB"></span>
+    						</a>
+    						<span class="contacts__ref">https://fc.com</span>
+    					</div>
+    					<div class="contacts__item-block">
+    						<a href="https://vk.com/astik1" class="contacts__item">
+    							<span class="contacts__imgWA"></span>
+    						</a>
+    						<span class="contacts__ref">89674241718</span>
+    					</div>
+    				</div>
+    				<div class="contacts__form">
+    					<h3 class="contacts__form-title">обратная связь</h3>
+    					<form class="contacts__form-content">
+    						<div class="contacts__form-block1">
+    							<div class="contacts__form-blockmassage">
+    								 <textarea class="contacts__form-item contacts__form-message" type="text" placeholder="СООБЩЕНИЕ"></textarea>
+    							</div>
+    							<div class="contacts__form-blockdata">
+    								<input class="contacts__form-item contacts__form-name" type="text" placeholder="ИМЯ" autocomplete="on" required>
+    								<input class="contacts__form-item contacts__form-surname" type="text" placeholder="ФАМИЛИЯ" autocomplete="on">
+							    	<input class="contacts__form-item contacts__form-mail" type="email" placeholder="EMAIL" autocomplete="on" required>
+							    	<input class="contacts__form-item contacts__form-tel" type="tel" placeholder="ТЕЛЕФОН" autocomplete="on" required> 
+    							</div>
+    						</div>
+    						<div class="contacts__form-block2">
+    							<button class="contacts__form-btn btn" type="submit">Отправить</button>
+    						</div>
+    					</form>
+    				</div>
+    			</div>
+    		</section>
+    	</main>
+ 
+
+                
+        <!--Подключение JQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
